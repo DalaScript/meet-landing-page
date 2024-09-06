@@ -1,0 +1,462 @@
+/* Colors
+ ******************************/
+/* Primary
+ ***************/
+/* Typography
+ ******************************/
+/* Mixins
+ ***************/
+/* Global Classes
+ ***************/
+.h1 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+  color: #28283D;
+  font-size: 40px;
+  line-height: 44px;
+}
+
+.h2,
+.h3 {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.h2 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+  color: #28283D;
+}
+
+.h3 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+  color: #FAFAFA;
+}
+
+.overline {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+  color: #4D96A9;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.body1 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  color: #87879D;
+  font-size: 16px;
+}
+
+.body2 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  color: #FAFAFA;
+  font-size: 18px;
+}
+
+.section-num {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-num .line {
+  width: 1px;
+  height: 84px;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  background-color: #87879D;
+}
+.section-num .number {
+  width: 56px;
+  height: 56px;
+  background-color: #FAFAFA;
+  border: 1px solid #87879d40;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+  color: #87879D;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* Global Variables
+ ******************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAFAFA;
+}
+body picture {
+  height: max-content;
+  display: flex;
+}
+body a {
+  text-decoration: none;
+}
+
+/* Body Elements
+ ******************************/
+.header {
+  padding: 48px 0 54px;
+  display: flex;
+  justify-content: center;
+}
+.header__link {
+  display: flex;
+}
+
+main {
+  overflow: hidden;
+}
+
+.intro {
+  margin-bottom: 64px;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro__bg-hero {
+  display: none;
+}
+.intro__title {
+  margin-top: 48px;
+}
+.intro__caption {
+  margin-top: 24px;
+  max-inline-size: 327px;
+}
+.intro__buttons {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.intro__btn--big {
+  padding: 16px 40px;
+  border-radius: 29px;
+  border: none;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  background-color: #4D96A9;
+}
+.intro__btn--big span {
+  margin-left: 4px;
+  color: #8FE3F9;
+}
+@media (hover: hover) and (pointer: fine) {
+  .intro__btn--big {
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+  }
+  .intro__btn--big:hover {
+    background-color: #71C0D4;
+  }
+}
+.intro__btn--small {
+  padding: 16px 29px;
+  border-radius: 29px;
+  border: none;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  background-color: #855FB1;
+}
+.intro__btn--small span {
+  margin-left: 4px;
+  color: #D9B8FF;
+}
+@media (hover: hover) and (pointer: fine) {
+  .intro__btn--small {
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+  }
+  .intro__btn--small:hover {
+    background-color: #B18BDD;
+  }
+}
+
+.features {
+  margin-bottom: 64px;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.features__img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 151px);
+  align-items: center;
+  justify-content: center;
+  gap: 24px 25px;
+}
+.features__img {
+  border-radius: 8px;
+}
+.features__inner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features__title {
+  margin-top: 24px;
+  max-inline-size: 327px;
+}
+.features__caption {
+  margin-top: 32px;
+  max-inline-size: 327px;
+}
+
+.experience {
+  position: relative;
+}
+.experience__inner-text {
+  margin-top: -28px;
+  padding: 92px 24px 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.experience__inner-text::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #4D96A9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.experience__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+  z-index: -1;
+}
+.experience__title {
+  color: #FAFAFA;
+}
+.experience__caption {
+  margin-top: 24px;
+  max-inline-size: 327px;
+}
+.experience__btn {
+  margin-top: 32px;
+  padding: 16px 40px;
+  border-radius: 29px;
+  border: none;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  background-color: #855FB1;
+}
+.experience__btn span {
+  margin-left: 4px;
+  color: #D9B8FF;
+}
+@media (hover: hover) and (pointer: fine) {
+  .experience__btn {
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+  }
+  .experience__btn:hover {
+    background-color: #B18BDD;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Typography
+   ******************************/
+  /* Global Classes
+   ***************/
+  .h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .h2,
+.h3 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  /* Body Elements
+   ******************************/
+  .header {
+    padding-bottom: 64px;
+  }
+
+  .intro {
+    margin-bottom: 80px;
+  }
+  .intro__title {
+    margin-top: 72px;
+  }
+  .intro__caption {
+    max-inline-size: 457px;
+  }
+  .intro__buttons {
+    flex-direction: row;
+  }
+
+  .features {
+    margin-bottom: 80px;
+    gap: 0;
+  }
+  .features__img-container {
+    margin-top: 67px;
+    gap: 11px;
+    grid-template-columns: repeat(4, 164px);
+  }
+  .features__inner-text {
+    margin-top: 48px;
+  }
+  .features__title {
+    margin-top: 16px;
+    max-inline-size: 445px;
+  }
+  .features__caption {
+    max-inline-size: 573px;
+  }
+
+  .experience__inner-text {
+    padding: 92px 0 66px;
+  }
+  .experience__caption {
+    margin-top: 32px;
+    max-inline-size: 573px;
+  }
+  .experience__btn {
+    margin-top: 40px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  /* Typography
+   ******************************/
+  /* Global Classes
+   ***************/
+  .h1 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .body1 {
+    font-size: 18px;
+  }
+
+  /* Body Elements
+   ******************************/
+  .header {
+    padding: 80px 0 61px;
+  }
+
+  .intro {
+    margin-bottom: 110px;
+    position: relative;
+  }
+  .intro__bg-hero-img {
+    display: none;
+  }
+  .intro__bg-hero {
+    display: block;
+    position: absolute;
+  }
+  .intro__bg-hero--left {
+    top: 0;
+    left: -32px;
+  }
+  .intro__bg-hero--right {
+    right: -32px;
+    bottom: 0;
+  }
+  .intro__title {
+    margin-top: 47px;
+  }
+  .intro__caption {
+    margin-top: 34px;
+    max-inline-size: 540px;
+  }
+  .intro__buttons {
+    margin-bottom: 7px;
+  }
+
+  .features {
+    margin-bottom: 72px;
+  }
+  .features__img-container {
+    margin-top: 64px;
+    grid-template-columns: repeat(4, 255px);
+    gap: 30px;
+  }
+  .features__inner-text {
+    margin-top: 80px;
+  }
+  .features__caption {
+    max-inline-size: 540px;
+  }
+
+  .experience__inner-text {
+    padding: 116px 0 104px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .experience__title {
+    text-align: left;
+    inline-size: 350px;
+  }
+  .experience__caption {
+    margin-top: 0;
+    margin-left: 125px;
+    max-inline-size: 350px;
+    text-align: left;
+  }
+  .experience__btn {
+    margin-top: 0;
+    margin-left: 92px;
+    align-self: center;
+  }
+}

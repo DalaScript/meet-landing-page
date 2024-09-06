@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Meet landing page</title>
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+<body>
+  <header class="header">
+    <a class="header__link" href="#">
+      <img class="header__logo" width="119" height="28" src="./assets/images/logo.svg" alt="logo">
+    </a>
+  </header>
+  <main>
+    <section class="intro">
+      <picture>
+        <source media="(min-width: 768px)" srcset="./assets/images/tablet/image-hero.png" width="820" height="303">
+        <img class="intro__bg-hero-img" src="./assets/images/tablet/image-hero.png" width="414" height="153" alt="hero">
+      </picture>
+      <img class="intro__bg-hero intro__bg-hero--left" src="./assets/images/desktop/image-hero-left.png" alt="hero left">
+      <img class="intro__bg-hero intro__bg-hero--right" src="./assets/images/desktop/image-hero-right.png" alt="hero right">
+      <h1 class="intro__title h1">
+        Group Chat <br>
+        for Everyone
+      </h1>
+
+      <p class="intro__caption body1">
+        Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+      </p>
+
+      <section class="intro__buttons">
+        <button class="intro__btn intro__btn--big">Download<span>v1.3</span></button>
+        <button class="intro__btn intro__btn--small">What is it?</button>
+      </section>
+    </section>
+    <section class="features">
+      <article class="section-num">
+        <div class="line"></div>
+        <p class="number">01</p>
+      </article>
+      <section class="features__img-container">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/images/desktop/image-woman-in-videocall.jpg" width="255" height="242">
+          <source media="(min-width: 768px)" srcset="./assets/images/desktop/image-woman-in-videocall.jpg" width="164" height="156">
+          <img class="features__img" src="./assets/images/desktop/image-woman-in-videocall.jpg" width="151" height="143" alt="image of woman in videocall">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/images/desktop/image-women-videochatting.jpg" width="255" height="242">
+          <source media="(min-width: 768px)" srcset="./assets/images/desktop/image-women-videochatting.jpg" width="164" height="156">
+          <img class="features__img" src="./assets/images/desktop/image-women-videochatting.jpg" width="151" height="143" alt="">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/images/desktop/image-men-in-meeting.jpg" width="255" height="242">
+          <source media="(min-width: 768px)" srcset="./assets/images/desktop/image-men-in-meeting.jpg" width="164" height="156">
+          <img class="features__img" src="./assets/images/desktop/image-men-in-meeting.jpg" width="151" height="143" alt="">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/images/desktop/image-man-texting.jpg" width="255" height="242">
+          <source media="(min-width: 768px)" srcset="./assets/images/desktop/image-man-texting.jpg" width="164" height="156">
+          <img class="features__img" src="./assets/images/desktop/image-man-texting.jpg" width="151" height="143" alt="">
+        </picture>
+      </section>
+      <section class="features__inner-text">
+        <p class="features__slogan overline">Built for modern use</p>
+        <h1 class="features__title h2">
+          Smarter meetings, all in one place
+        </h1>
+        <p class="features__caption body1">
+          Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who can join with invite-&nbsp;only team access, data encryption, and data export.
+        </p>
+      </section>
+    </section>
+    <section class="experience">
+      <article class="section-num">
+        <div class="line"></div>
+        <p class="number">02</p>
+      </article>
+      <section class="experience__inner-text">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./assets/images/desktop/image-footer.jpg">
+          <source media="(min-width: 768px)" srcset="./assets/images/tablet/image-footer.jpg">
+          <img class="experience__img" src="./assets/images/mobile/image-footer.jpg" alt="background image">
+        </picture>
+        <h1 class="experience__title h3">
+          Experience more <br>
+          together
+        </h1>
+        <p class="experience__caption body2">
+          Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+        </p>
+        <button class="experience__btn">Download<span>v1.3</span></button>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
