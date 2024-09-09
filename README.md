@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/DalaScript/meet-landing-page)
-- [Live Site URL](https://dalascript.github.io/meet-landing-page/)
+- [Live Site URL](https://DalaScript.github.io/meet-landing-page/)
 
 ## My process
 
@@ -42,6 +42,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Grid
 - Mobile-first workflow
 - bem - [Block Element Modifier](https://getbem.com/introduction/)
 - scss - [Sassy Cascading Style Sheets](https://sass-lang.com/documentation/at-rules/control/for/)
